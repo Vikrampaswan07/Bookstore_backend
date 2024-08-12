@@ -28,6 +28,9 @@ try {
 }
 
 // defining routes
+app.get("/",(req,res)=>{
+    res.send("backend is fine");
+})
 app.use("/book",bookRoute);
 app.use("/user", userRoute);
 
